@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Conversor from './components/Conversor';
+import Conversor from './components/ConversorF';
 
 import './App.css';
 
