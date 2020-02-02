@@ -8,6 +8,13 @@ const Conversor = (props) => {
     const [moedaB_valor, setMoedaB_valor] = useState(0);
 
     const converter = () => {
+
+        if (isNaN(parseInt(moedaA_valor))) {
+            alert('Informe um valor numérico');
+            return;
+        }
+
+
         let de_para = `${props.moedaA}_${props.moedaB}`;
         
         let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=8c26d68917239e25afd0`;
